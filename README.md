@@ -1,3 +1,31 @@
+# 坑
+## 1
+
+.well-known/ai-plugin.json
+```{
+    "schema_version": "v1",
+    "name_for_human": "puyue TODO",//不能太长
+    "name_for_model": "puyuetodo",
+    "description_for_human": "puyue TODO list.",//不能太长
+    "description_for_model": "puyue Plugin TODO list",//不能太长
+    "auth": {
+      "type": "none"
+    },
+    "api": {
+      "type": "openapi",
+      "url": "https://puyue-todo-list-plugin-armkas.replit.app/openapi.yaml"//这里是花括号中最后一个不能带逗号
+    },
+    "logo_url": "https://puyue-todo-list-plugin-armkas.replit.app/logo.png",//可以是任何网络图片连接
+    "contact_email": "legal@example.com",//无视
+    "legal_info_url": "http://example.com/legal"//无视
+  }```
+## 2
+
+openapi.yaml文件中url别忘了设定 
+
+我这里用的是在线编译器replit这样就能直接deploy(部署)到服务器
+
+
 # ChatGPT plugins quickstart
 
 Get a todo list ChatGPT plugin up and running in under 5 minutes using Python. If you do not already have plugin developer access, please [join the waitlist](https://openai.com/waitlist/plugins).
