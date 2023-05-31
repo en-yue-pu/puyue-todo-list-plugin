@@ -18,13 +18,23 @@
     "logo_url": "https://puyue-todo-list-plugin-armkas.replit.app/logo.png",//可以是任何网络图片连接
     "contact_email": "legal@example.com",//无视
     "legal_info_url": "http://example.com/legal"//无视
-  }```
+  }
+```
+  
 ## 2
 
 openapi.yaml文件中url别忘了设定 
 
-我这里用的是在线编译器replit这样就能直接deploy(部署)到服务器
+(我这里用的是在线编译器replit这样就能直接deploy(部署)到服务器)
 
+#replit
+
+收费 一个仓库单独最低0.2美元一天,但是太差0.4的才能用
+仓库必须是自己名下的,或者自己github仓库导入过来的,别人的仓库invite你进去能修改但是不能deploy
+deploy和run是独立的 run是localhost
+deploy时候有一个可选设置是build 要加 ``pip install -r requirements.txt`` 导入包
+
+# 以下是本来的readme
 
 # ChatGPT plugins quickstart
 
