@@ -4,7 +4,7 @@ import quart
 import quart_cors
 from quart import request
 
-app = quart_cors.cors(quart.Quart(__name__), allow_origin="https://chat.openai.com") # 允许chatgpt官方domin的访问
+app = quart_cors.cors(quart.Quart(__name__), allow_origin="https://chat.openai.com") # 只允许chatgpt官方domin的访问
 
 # Keep track of todo's. Does not persist if Python session is restarted.
 _TODOS = {}
