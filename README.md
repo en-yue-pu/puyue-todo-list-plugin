@@ -13,7 +13,7 @@
     "description_for_human": "puyue TODO list.",//不能太长
     "description_for_model": "puyue Plugin TODO list",//不能太长
     "auth": {
-      "type": "none"
+      "type": "none" // 没有验证 https://techdiylife.github.io/ChatGPT-programming-handbook/contents/chat-plugins-overview.html#27-%E6%8F%92%E4%BB%B6%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81
     },
     "api": {
       "type": "openapi",
