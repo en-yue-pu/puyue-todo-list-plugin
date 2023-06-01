@@ -9,7 +9,7 @@ app = quart_cors.cors(quart.Quart(__name__), allow_origin="https://chat.openai.c
 # Keep track of todo's. Does not persist if Python session is restarted.
 _TODOS = {}
 
-@app.post("/todos/<string:username>")
+@app.post("/todos/<string:username>") #chatgpt发送todo数据到plugin
 async def add_todo(username):
     request = await quart.request.get_json(force=True)
     if username not in _TODOS:
@@ -17,11 +17,11 @@ async def add_todo(username):
     _TODOS[username].append(request["todo"])
     return quart.Response(response='OK', status=200)
 
-@app.get("/todos/<string:username>")
+@app.get("/todos/<string:username>") #chatgpt从plugin取得todo数据
 async def get_todos(username):
     return quart.Response(response=json.dumps(_TODOS.get(username, [])), status=200)
 
-@app.delete("/todos/<string:username>")
+@app.delete("/todos/<string:username>") #chatgpt删除plugin中的todo数据
 async def delete_todo(username):
     request = await quart.request.get_json(force=True)
     todo_idx = request["todo_idx"]
