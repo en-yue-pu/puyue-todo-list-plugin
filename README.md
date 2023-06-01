@@ -31,6 +31,8 @@ openapi.yaml文件中url别忘了设定
 
 (我这里用的是在线编译器replit这样就能直接deploy(部署)到服务器)
 
+openapi.yaml 是让chatgpt读的详细式样书 输入什么 输出什么 格式属什么 等等
+
 #replit
 
 收费 一个仓库单独最低0.2美元一天,但是太差0.4的才能用
